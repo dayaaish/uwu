@@ -541,6 +541,43 @@ textarea{
 }
 /* !CONTACT STYLES */
 
+.contact-form{
+    display: flex;
+}
+
+.input{
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.input-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform .25s;
+}
+
+.input input{
+    width: 100%;
+    border-bottom: 1px solid var(--dark-color);
+    padding: .5rem;
+}
+
+.input input:focus + .input-label{
+    transform: translateY(-2.5rem);
+}
+
+.form-button{
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+
+
 /* !FOOTER STYLES */
 
 /* !SCROLLBAR */
