@@ -198,8 +198,10 @@ textarea{
     color: var(--dark-color);
 }
 
-.list-link:hover
-.list-link:focus{
+.list-link:hover,
+.list-link:focus,
+.scroll-top:hover,
+.scroll-top:focus{
     opacity: .7;
 }
 
@@ -575,11 +577,110 @@ textarea{
     text-transform: uppercase;
     margin: 0 auto;
 }
-
-
+ 
+.required-field{
+    font-size: 1rem;
+    color: #ff7575;
+    transform: translateY(-.8rem);
+}
 
 /* !FOOTER STYLES */
 
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    border-top: 1px solid var(--border-top-color);
+    padding-top: 5rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer .list-link{
+    color: var(--dark-color);
+}
+
+.scroll-top{
+    display: flex;
+    align-items: center;
+    color: var(--dark-color);
+}
 /* !SCROLLBAR */
 
+::-webkit-scrollbar{
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--dark-color);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #b3bbce;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #808694;
+}
+
+@media screen and (min-width: 768px){
+    .inline-image{
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .inline-image.has-sparkles::before{
+        width: 1.5rem;
+        height: 1.5rem;
+        top: -1rem;
+        right: -1rem;
+    }
+    .inline-image.has-sparkles::before{
+        width: 1.5rem;
+        height: 1.5rem;
+        top: 1.5rem;
+        right: -1.5rem;
+    }
+
+    .section-description{
+        grid-template-columns: 1.5fr 1fr;
+        align-items: center;
+    }
+
+    .description{
+        font-size: 2.4rem;
+    }
+    .description-image{
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .portofolio-cards{
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .portofolio-cards-1{
+        grid-column: 1/6;
+        grid-row: 1/span 10;
+    }
+
+    .portofolio-cards-2{
+        grid-column: 6/-1;
+        grid-row: 2/span 10;
+    }
+
+    .input-group{
+        display: flex;
+        column-gap: 5rem;
+    }
+
+    .input{
+        width: 100%;
+    }
+
+    .footer-container{
+        padding-block: 5rem;
+    }
+}
 /* !MEDIA QUERIES */
