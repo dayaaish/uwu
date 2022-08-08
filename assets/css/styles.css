@@ -38,8 +38,8 @@ body{
 }
 
 body.darktheme{
-    --light-color: #000;
-    --dark-color: #fff;
+    --light-color: #000000;
+    --dark-color: #ffffff;
     --border-top-color: rgba(255,255,255,.1);
 }
 
@@ -82,7 +82,7 @@ textarea{
 */
 /* !REUSABLE CLASSES */
 .container{
-    max-width: var(--container-width);
+    max-width: 54rem;
     margin: 0 auto;
     padding: 0 var(--container-padding);
 }
@@ -625,6 +625,10 @@ textarea{
 }
 
 @media screen and (min-width: 768px){
+    .container{
+        max-width: 96rem;
+    }
+
     .inline-image{
         width: 15rem;
         height: 15rem;
