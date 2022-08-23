@@ -246,7 +246,7 @@ textarea{
 }
 
 .main-title{
-    font-size: clamp(5rem, 10vw, 10rem);
+    font-size: clamp(4rem, 8vw, 8rem);
     text-align: center;
     line-height: 1.2;
 }
@@ -254,11 +254,12 @@ textarea{
 .inline-image{
     width: 7rem;
     height: 7rem;
-    background: url('../images/statue_hero.png') top center no-repeat;
+    background: url('../images/statue2.jpg') top center no-repeat;
     background-size: cover;
     border-radius: 50%;
     border-bottom-left-radius: 0;
     margin: 0 1.5rem;
+    opacity: 70%;
 }
 
 .dark-theme .has-sparkles::before,
@@ -410,7 +411,7 @@ textarea{
 }
 
 .section-subtitle-container{
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
     column-gap: 1.5rem;
@@ -443,7 +444,7 @@ textarea{
 }
 
 .section-subtitle{
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: clamp(1rem, 4vw, 3rem);
 }
 
 .portfolio-cards{
